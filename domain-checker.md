@@ -22,7 +22,7 @@ POST /api/domain-availability
 ```json
 {
   "domains": ["mywebsite", "testdomain"],
-  "tlds": ["com", "net", "io"]
+  "tlds": ["com"]
 }
 ```
 
@@ -30,14 +30,10 @@ POST /api/domain-availability
 ```json
 {
   "mywebsite": {
-    "com": "available",
-    "net": "taken",
-    "io": "available"
+    "com": "available"
   },
   "testdomain": {
-    "com": "taken",
-    "net": "available",
-    "io": "taken"
+    "com": "taken"
   }
 }
 ```
