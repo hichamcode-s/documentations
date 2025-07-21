@@ -19,6 +19,14 @@
 POST /text-extractor
 ```
 
+## 📋 Request Parameters
+
+| Parameter | Type | Required | Description |
+|-----------|------|----------|-------------|
+| `image` | File | ✅ | Image file to extract text from |
+| `language` | String | ❌ | Language code for OCR (default: "eng") |
+
+
 ### Response
 ```json
 {
@@ -29,12 +37,6 @@ POST /text-extractor
 }
 ```
 
-## 📋 Request Parameters
-
-| Parameter | Type | Required | Description |
-|-----------|------|----------|-------------|
-| `image` | File | ✅ | Image file to extract text from |
-| `language` | String | ❌ | Language code for OCR (default: "eng") |
 
 ## 📋 Response Fields
 
